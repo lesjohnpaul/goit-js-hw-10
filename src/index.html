@@ -1,15 +1,25 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Page title</title>
-    <link rel="stylesheet" href="./sass/index.scss" />
-    <script type="module" src="./index.js"></script>
-  </head>
-  <body>
-    <h1>Example title</h1>
-    <!-- ❗️❗️❗️ Add partials like so for every page -->
-    <include src="./partials/example.html"></include>
-  </body>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>GoIT JS Homework 10</title>
+</head>
+
+<body>
+  <h1>Cat Breeds Lookup</h1>
+  <div class="select-container">
+    <select class="breed-select is-hidden"></select>
+
+    <p class="loader">Loading data, please wait...</p>
+    <p class="error is-hidden">
+      Oops! Something went wrong! Try reloading the page!
+    </p>
+  </div>
+  <div class="cat-info"></div>
+  <script src="index.js" type="module"></script>
+</body>
+
 </html>
